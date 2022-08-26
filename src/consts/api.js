@@ -1,1 +1,0 @@
-export const GRAPHQL_API_URL="https://fierce-cove-23221.herokuapp.com/graphql"

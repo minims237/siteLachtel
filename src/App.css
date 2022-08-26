@@ -1,5 +1,4 @@
 .app {
-
   background: white;
   width: 100%;
   color: black;
@@ -21,7 +20,10 @@
   box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
   z-index: 100;
 }
-
+.sectionTwo{
+  display: flex;
+  flex-direction: row;
+}
 .h_navi {
   display: flex;
   flex-direction: row;
@@ -56,7 +58,7 @@ h4 {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  
+
 }
 
 .contact_b {
@@ -209,7 +211,9 @@ h4 {
   align-items: flex-start;
   margin-right: 35px;
 }
-
+.mResponsif{
+  display: none;
+}
 .space {
   padding-top: 10px;
 }
@@ -245,7 +249,7 @@ h4 {
 .acBloc {
   min-height: 50vh;
   background: rgba(255, 255, 255, 0.9);
-  width: 80%;
+  width: 90%;
   border-top: 4px solid #039af5;
 }
 
@@ -272,4 +276,118 @@ h4 {
 .backUp a {
 
   color: #fff;
+}
+
+.mResponsif {
+  display: none;
+}
+
+.mResponsif button {
+  border: none;
+  color: #039af5;
+
+}
+
+.mResponsif button:hover {
+  border: none;
+  color: #039af5;
+}
+
+.closeBtn {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .contac {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .h_navi .active {
+    color: #fff;
+  }
+  .mResponsif {
+    display: flex;
+  }
+
+  .h_navi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 35px;
+  }
+
+  .closeBtn {
+    display: flex;
+    position: fixed;
+    top: 37px;
+    right: 6px;
+  }
+
+  .btnBlog {
+    display: none;
+  }
+
+  .h_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    transform: 0.3s;
+    width: 100%;
+    min-height: 120px;
+    box-shadow: 0px 2px 15px rgba(5, 4, 4, 0.1);
+    z-index: 100;
+  }
+
+  .c_section {
+    background-color: #f6f6f6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .c_bs,
+  .c_s,
+  .c_lienB {
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .h_header_oneBlogA {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .sectionTwo {
+    background-color: #039af5;
+    opacity: 0.5;
+    color: #fff;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    min-width: 45%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 16vh;
+    justify-content: flex-start;
+  }
 }
