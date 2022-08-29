@@ -1,0 +1,16 @@
+.c_info input{
+    border:  #039af5 dashed 1px;
+    display: flex;
+    text-align: center;
+}
+
+
+.contact_b button{
+    width: 100%;
+    text-align: center;
+    background-color: #039af5;
+    border: #039af5 solid 2px;
+    border-radius: 5px;
+    color: white;
+    
+}
