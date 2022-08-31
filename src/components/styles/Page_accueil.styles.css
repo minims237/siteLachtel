@@ -1,0 +1,63 @@
+.Page_accueil_profil{
+    display: flex;
+    flex-direction: column;
+}
+
+.all_top_side{
+    background-color: #7565E4;
+    height: 65vh;
+}
+.under_top_side{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 1.5em;
+}
+
+.bottom_side{
+    background-color: #F4F5FC;
+    border-radius: 8px;
+    height: 75vh;
+    margin: -25px 35px 0px 35px;
+    
+}
+
+.transactions_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 5px 10px;
+
+}
+
+.transactions_title button{
+    background-color: #7565E4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: auto;
+    height: 35px;
+}
+
+.transactions_title p{
+    color: #32325D;
+}
+
+.table .column_title{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 10px 15px ;
+    justify-content: space-between;
+}
+
+.column_title td{
+    color: #8898AA;
+    font-size: 12px;
+    width: 20%;
+}
+
+.column_title{
+    border-bottom:  2px solid #8898AA;
+    padding: 10px 15px ;
+}
