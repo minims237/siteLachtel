@@ -6,6 +6,7 @@ import Apropos from "../components/Apropos";
 import "../components/styles/apropos.css";
 import Header from "./Header.components";
 import AproposD from "../components/AproposD";
+import Produit from "./nosProduits.component";
 let d = 100;
 const HomePage = () => {
   const [naviga, setNaviga] = useState(1);
@@ -31,7 +32,9 @@ const HomePage = () => {
       <div id="nosproduit" className="oneBlock">
         <div className="onBlock_title">
           <h3>nos produits</h3>
+          
         </div>
+        <Produit />
       </div>
       <div id="noschiffre" className="oneBlock">
         <div className="onBlock_title">
