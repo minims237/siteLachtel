@@ -3,10 +3,23 @@
     flex-direction: column;
     align-items: center;
     background-color: aqua;
-    margin-right: 300px;
-    margin-left: 400px;
+    border-radius: 10px;
+    width: 650px;
+    margin: 0 auto;
+    
+    
+    
 }
-
+.p_container_cmpt{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    background-color: aquamarine;
+}
 .pf_container h5 {
     font-weight: 10;
     margin-right: 400px;
@@ -22,9 +35,11 @@
 
 }
 .pf_container h2 {
+   
     font-weight:bold ;
     font-size: 16px;
-    margin-right: 450px;
+    
+
 }
 .pf_container h3 {
     font-weight: 100px;
@@ -35,6 +50,12 @@
 .input_container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ecart_inpt{
+    margin-left: 50px;
+    
 }
 
 .C_input {
@@ -48,7 +69,6 @@
     width: 550px;
     height: 40px;
     border-radius: 5px;
-    margin-left: 50px;
 }
 
 .adres_input {}
@@ -62,7 +82,7 @@
     height: 40px;
     border-color: blue;
     color: white;
-    margin-left: 50px;
+   
 }
 
 .btn2 {
@@ -74,3 +94,5 @@
     color: white;
     margin-left: 50px;
 }
+
+

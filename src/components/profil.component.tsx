@@ -3,22 +3,34 @@ import "./styles/profil.css"
 const Profil = () => {
     return (
         <div className="pf_container">
+            <div className="p_container_cmpt" >
             <h2>Mon compte</h2>
+            </div>
             <h5>VOS INFORMATIONS</h5>
             <div className="input_container">
+                
                 <Input name="NOM(S)" placeholder="NOM(S)" />
+                <div className="ecart_inpt">
+               
                 <Input name="NOM(S)" placeholder="NOM(S)" />
+                </div>
             </div>
             <div className="input_container">
                 <Input name="PAYS" placeholder="PAYS" />
-                <Input name="VILLE" placeholder="VILLE" />
+                <div className="ecart_inpt">
+               
+               <Input name="NOM(S)" placeholder="NOM(S)" />
+               </div>
             </div>
             <hr />
             <h5>VOS INFORMATIONS</h5>
             <input className="pf_input_inf" />
             <div className="input_container">
                 <Input name="NOM(S)" placeholder="NOM(S)" />
-                <Input name="NOM(S)" placeholder="NOM(S)" />
+                <div className="ecart_inpt">
+               
+               <Input name="NOM(S)" placeholder="NOM(S)" />
+               </div>
             </div>
             <h4>VOS INFORMATIONS</h4>
             <input className="pf_input_inf" />
@@ -34,7 +46,10 @@ const Profil = () => {
             <h5>VOS IDENTIFIANTS</h5>
             <div className="input_container">
                 <Input name="Email" placeholder="Email" />
-                <Input name="Numero de téléphone" placeholder="Numero de téléphone" />
+                <div className="ecart_inpt">
+               
+               <Input name="NOM(S)" placeholder="NOM(S)" />
+               </div>
             </div>
             <h4>mot de passe</h4>
             <input type="password" className="pf_input_inf" />
