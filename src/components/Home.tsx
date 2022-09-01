@@ -32,6 +32,7 @@ const HomePage = () => {
       <div id="nosproduit" className="oneBlock">
         <div className="onBlock_title">
           <h3>nos produits</h3>
+          
         </div>
       </div>
       <div id="noschiffre" className="oneBlock">
