@@ -1,0 +1,29 @@
+.container_TopBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    font-size: .9375rem;
+    font-weight: 200;
+}
+
+.container_TopBar .avatar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar h4{
+    margin-left: 5px;
+}
+
+.avatar {
+    padding-left: 165vh;
+}
+
+.container_TopBar h4{
+     font-weight: 750;
+     color: #FFFFFF;
+}
