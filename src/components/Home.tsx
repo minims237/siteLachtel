@@ -6,6 +6,7 @@ import Apropos from "../components/Apropos";
 import "../components/styles/apropos.css";
 import Header from "./Header.components";
 import AproposD from "../components/AproposD";
+import Contacts from "./Contacts.Components";
 let d = 100;
 const HomePage = () => {
   const [naviga, setNaviga] = useState(1);
@@ -40,45 +41,8 @@ const HomePage = () => {
         </div>
       </div>
       <div id="contact" className="oneBlock contact">
-        <div className="contact_b">
-          <div className="onBlock_title">
-            <h3>contacts</h3>
-          </div>
-          <div className="contac">
-            <div className="c_item">
-              <div className="c_icon">
-                <Icon.GeoAlt size="25" />
-              </div>
-              <div className="c_title">
-                <h4>Adresse</h4>
-              </div>
-              <div className="c_info">
-                <h5>maroua</h5>
-              </div>
-            </div>
-            <div className="c_item">
-              <div className="c_icon">
-                <Icon.Envelope size="25" />
-              </div>
-              <div className="c_title">
-                <h4>Email</h4>
-              </div>
-              <div className="c_info">
-                <h5>lacthel@gmail.com</h5>
-              </div>
-            </div>
-            <div className="c_item">
-              <div className="c_icon">
-                <Icon.Telephone size="25" />
-              </div>
-              <div className="c_title">
-                <h4>Phone</h4>
-              </div>
-              <div className="c_info">
-                <h5>(+237) 699 345 690</h5>
-              </div>
-            </div>
-          </div>
+        <div>
+          <Contacts/>
         </div>
         <div className="c_section">
           <div className="c_s">

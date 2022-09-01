@@ -1,14 +1,17 @@
 import "./App.css";
 import { HashRouter as Router } from "react-router-dom";
 import HomePage from "./components/Home";
-import ProduitDetail from "./components/produitDetail.component";
-import Produit from "./components/nosProduits.component";
+
+import Page_accueil from "./pages/Page_accueil";
+
 
 function App() {
   return (
     <div className="app">
         <Router>
-          <Produit />
+
+          <Page_accueil />
+
         </Router>
     </div>
   );
