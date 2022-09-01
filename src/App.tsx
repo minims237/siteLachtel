@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app">
         <Router>
-          <HomePage />
+          <Produit />
         </Router>
     </div>
   );
