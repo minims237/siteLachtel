@@ -1,0 +1,26 @@
+.container1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    
+}
+.container_img{
+    margin-right: 10px;
+}
+.container_text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.container_text h4{
+font-weight:1000 ;
+
+}
+.container_text h6{
+  opacity: 40%;
+    }
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
