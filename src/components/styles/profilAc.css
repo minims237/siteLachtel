@@ -1,0 +1,42 @@
+.pfAc_container{
+    display: flex;
+    flex-direction: column;
+    background-color: #25345b;
+    width: 1000px;
+    height: 500px;
+    align-content: center;
+    margin: 0 auto;
+    padding-top: 100px;
+   
+
+   
+    
+}
+.pfAc_container_txt{
+    margin-left: 30px;
+}
+.pfAc_container h5{
+    color: white;
+    font-size:  14px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.pfAc_container h4{
+    color: white;
+    font-size:  30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.pfAc_container h3{
+    color: white;
+    font-size:  30px;
+    margin-bottom: 15px;
+}
+.pfAc_btn{
+border-radius: 10px;
+color: #567178;
+background-color: #11cdf0;
+border-color:#11cdf0; ;
+width: 180px;
+height: 40px;
+}

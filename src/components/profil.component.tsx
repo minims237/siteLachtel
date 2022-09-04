@@ -1,4 +1,5 @@
 import Input from "./input.component"
+import ProfilAc from "./profilAc.component"
 import "./styles/profil.css"
 const Profil = () => {
     return (
@@ -12,34 +13,35 @@ const Profil = () => {
                 <Input name="NOM(S)" placeholder="NOM(S)" />
                 <div className="ecart_inpt">
                
-                <Input name="NOM(S)" placeholder="NOM(S)" />
+                <Input name="PRENOM(S)" placeholder="PRENOM(S)" />
                 </div>
             </div>
             <div className="input_container">
                 <Input name="PAYS" placeholder="PAYS" />
                 <div className="ecart_inpt">
                
-               <Input name="NOM(S)" placeholder="NOM(S)" />
+               <Input name="VILLE" placeholder="VILLE" />
                </div>
             </div>
-            <hr />
-            <h5>VOS INFORMATIONS</h5>
-            <input className="pf_input_inf" />
+            <hr className="pf_trait"/>
+            <h5>VOS INFORMATION DE PAIEMENT</h5>
+            <h4>Adresse mail paypal</h4>
+            <input className="pf_input_inf" placeholder="exemple@gmail.com" />
             <div className="input_container">
-                <Input name="NOM(S)" placeholder="NOM(S)" />
+                <Input name="Numéro mtn mobile money(Cameroun uniquement)" placeholder="Numéro mtn mobile money" />
                 <div className="ecart_inpt">
                
-               <Input name="NOM(S)" placeholder="NOM(S)" />
+               <Input name="Numéro Orange Money(Cameroun uniquement)" placeholder="Numéro Orange Money" />
                </div>
             </div>
-            <h4>VOS INFORMATIONS</h4>
+            <h4>Adresse Bitcoin (Réseau Bitcoin)</h4>
+            <input className="pf_input_inf" placeholder="Adresse Bitcoin"/>
+            <h4>Adresse Usdt (Réseau TRC 20)</h4>
+            <input className="pf_input_inf" placeholder="Adresse Usdt"/>
+            <h4>Western union</h4>
             <input className="pf_input_inf" />
-            <h4>VOS INFORMATIONS</h4>
-            <input className="pf_input_inf" />
-            <h4>VOS INFORMATIONS</h4>
-            <input className="pf_input_inf" />
-            <h4>VOS INFORMATIONS</h4>
-            <input className="pf_input_inf" />
+            <h4>Informations bancaire (Entrez toutes vos informations bancaire dont nous avons besoin pour vous éffectuer votre dépôt)</h4>
+            <textarea  className="pf_input_inf_banc" />
             <h3>Assurez-vous de remplir correctement vos informations de paiement.</h3>
             <h3> Nous ferons  un choix parmi celles que vous avez rempli pour effectuer vos dépôts.</h3>
             <hr />
@@ -48,7 +50,7 @@ const Profil = () => {
                 <Input name="Email" placeholder="Email" />
                 <div className="ecart_inpt">
                
-               <Input name="NOM(S)" placeholder="NOM(S)" />
+               <Input name="Numero de téléphone" placeholder="Numero de téléphone" />
                </div>
             </div>
             <h4>mot de passe</h4>

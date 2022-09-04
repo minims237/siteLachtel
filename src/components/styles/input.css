@@ -3,6 +3,8 @@
     width: 250px;
     height: 40px;
     border-radius: 5px;
+    border-color: #d6ebfb;
+    border-style: double;
 }
 .inpt_container{
     display: flex;
