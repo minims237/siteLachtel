@@ -13,7 +13,7 @@ const Profil = () => {
                 <Input name="NOM(S)" placeholder="NOM(S)" />
                 <div className="ecart_inpt">
                
-                <Input name="PRENOM(S)" placeholder="PRENOM(S)" />
+                <Input  name="PRENOM(S)" placeholder="PRENOM(S)" />
                 </div>
             </div>
             <div className="input_container">
@@ -34,12 +34,6 @@ const Profil = () => {
                <Input name="Numéro Orange Money(Cameroun uniquement)" placeholder="Numéro Orange Money" />
                </div>
             </div>
-            <h4>Adresse Bitcoin (Réseau Bitcoin)</h4>
-            <input className="pf_input_inf" placeholder="Adresse Bitcoin"/>
-            <h4>Adresse Usdt (Réseau TRC 20)</h4>
-            <input className="pf_input_inf" placeholder="Adresse Usdt"/>
-            <h4>Western union</h4>
-            <input className="pf_input_inf" />
             <h4>Informations bancaire (Entrez toutes vos informations bancaire dont nous avons besoin pour vous éffectuer votre dépôt)</h4>
             <textarea  className="pf_input_inf_banc" />
             <h1>Assurez-vous de remplir correctement vos informations de paiement. Nous ferons  un choix parmi celles que vous avez rempli pour effectuer vos dépôts.</h1>
@@ -59,12 +53,7 @@ const Profil = () => {
                 <button className="btn1">sauvegarder les changements</button>
                 <button className="btn2">changer mon mot de passe</button>
             </div>
-            <hr />
-            <h5>AUTRES INFORMATIONS</h5>
-            <h2>lien de parrainage</h2> 
-            <h3>https://lacthel@gmail.com/index.php?code=0433a4e3bc107d5c854138915771b0d5</h3>
-            <div className="">
-            </div>
+            
         </div>
     )
 }
