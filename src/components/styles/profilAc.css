@@ -20,6 +20,8 @@
     font-size:  14px;
     font-weight: bold;
     margin-bottom: 40px;
+    opacity: 0.9;
+    font-weight: 100;
 }
 .pfAc_container h4{
     color: white;
