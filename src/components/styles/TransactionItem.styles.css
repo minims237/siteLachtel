@@ -1,0 +1,18 @@
+ .column_title{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 10px 15px ;
+    justify-content: space-between;
+}
+
+.column_title td{
+    color: #8898AA;
+    font-size: 12px;
+    width: 20%;
+}
+
+.column_title{
+    border-bottom:  2px solid #8898AA;
+    padding: 10px 15px ;
+}

@@ -1,0 +1,33 @@
+.item{
+    background-color: #FFFFFF;
+    margin: 7px 15px;
+    border-radius: 8px;
+    padding: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title h6{
+    font-size: 12px;
+    font-weight: 600;
+    color: #8898AA;
+}
+
+.part_value h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #32325D;
+}
+
+.time_remainder h6{
+    font-size: 12.5px;
+    font-weight: 300;
+    color: #8898AA;
+}
+
+.part_value{
+    margin-bottom: 25px;
+}
+
