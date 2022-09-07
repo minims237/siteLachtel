@@ -3,10 +3,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 0px;
+    padding: 35px;
     font-size: .9375rem;
     font-weight: 200;
-    width: 100%;
 }
 
 .container_TopBar .avatar{
@@ -20,7 +19,9 @@
     margin-left: 5px;
 }
 
-
+.avatar {
+    padding-left: 165vh;
+}
 
 .container_TopBar h4{
      font-weight: 750;

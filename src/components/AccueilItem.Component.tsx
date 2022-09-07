@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles/AccueilItem.styles.css";
 
 const AccueilItem = (props: any) => {
