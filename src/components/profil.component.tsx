@@ -42,8 +42,7 @@ const Profil = () => {
             <input className="pf_input_inf" />
             <h4>Informations bancaire (Entrez toutes vos informations bancaire dont nous avons besoin pour vous éffectuer votre dépôt)</h4>
             <textarea  className="pf_input_inf_banc" />
-            <h3>Assurez-vous de remplir correctement vos informations de paiement.</h3>
-            <h3> Nous ferons  un choix parmi celles que vous avez rempli pour effectuer vos dépôts.</h3>
+            <h1>Assurez-vous de remplir correctement vos informations de paiement. Nous ferons  un choix parmi celles que vous avez rempli pour effectuer vos dépôts.</h1>
             <hr />
             <h5>VOS IDENTIFIANTS</h5>
             <div className="input_container">
@@ -54,7 +53,7 @@ const Profil = () => {
                </div>
             </div>
             <h4>mot de passe</h4>
-            <input type="password" className="pf_input_inf" />
+            <input type="password" className="pf_input_pass" />
             <hr />
             <div className="pf_countainer_btn">
                 <button className="btn1">sauvegarder les changements</button>
