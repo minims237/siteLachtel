@@ -1,0 +1,35 @@
+
+    .Nos_chiffres{
+        padding-top: 25px;
+        flex : auto;
+        margin-left: 50px;
+        
+    }
+
+    .item button{
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        background-color: white;
+        transition-duration: 2s;
+        color: #039af5;
+    }
+
+    .item1 button{
+        font-weight: bold; 
+        font-size: 20px;
+        border: none;
+        color: #000;
+        background-color: white; 
+    }
+
+    .item1{
+        color: #039af5;
+    }
+    .open{
+        padding-left: 20px;
+    }
+    .tbl{
+        min-width: 100vh;
+        max-width: 100vh;
+    }

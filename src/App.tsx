@@ -3,6 +3,7 @@ import { HashRouter as Router } from "react-router-dom";
 import HomePage from "./components/Home";
 
 import Page_accueil from "./pages/Page_accueil";
+import Account from "./pages/Account.pages";
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div className="app">
         <Router>
 
-          <Page_accueil />
+          <Account />
 
         </Router>
     </div>

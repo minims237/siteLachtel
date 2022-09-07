@@ -1,0 +1,68 @@
+.s_container{
+    margin: 10px auto;
+    width: 500px;
+    border: 2px solid rgb(208, 211, 221);
+    border-radius: 7px;
+}
+.signup_form{
+    display: flex;
+  flex-direction: column;
+
+}
+.signup_for{
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.signup_for input{
+    width: 80%;
+    opacity: 90%;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 0px 0 10px 40px;
+    padding-left: 10px;
+}
+
+.signup_for_title{
+    background-color: #fff;
+    margin-left: 40px;
+}
+
+.signup_for_title_a{
+    margin-left: -15px;
+}
+
+.signup_for_box{
+    background: #e7e1e1;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.submit-class{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.submit-class input{
+    height: 35px;
+    width: 100px;
+    background: #0d6efd;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+    border: 1px transparent red;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+input::placeholder{
+    opacity:50%;
+    font-size:17px;
+}
+
