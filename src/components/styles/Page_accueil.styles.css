@@ -5,13 +5,14 @@
 
 .all_top_side{
     background-color: #7565E4;
-    height: 65vh;
+    height: 450px;
+}
+.all_top_sides{
+    background-color: #191c4d;
+    height: 450px;
 }
 .under_top_side{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 1.5em;
+    margin:0px 35px ;
 }
 
 .bottom_side{

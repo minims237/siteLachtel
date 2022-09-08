@@ -5,7 +5,7 @@ const Profil = () => {
     return (
         <div className="pf_container">
             <div className="p_container_cmpt" >
-            <h2>Mon compte</h2>
+            <h2></h2>
             </div>
             <h5>VOS INFORMATIONS</h5>
             <div className="input_container">
@@ -46,8 +46,12 @@ const Profil = () => {
                <Input name="Numero de téléphone" placeholder="Numero de téléphone" />
                </div>
             </div>
-            <h4>mot de passe</h4>
-            <input type="password" className="pf_input_pass" />
+            <div className="input_container">
+                <Input name="Mot de passe" placeholder="Email" type="password" />
+               
+               
+               
+            </div>
             <hr />
             <div className="pf_countainer_btn">
                 <button className="btn1">sauvegarder les changements</button>

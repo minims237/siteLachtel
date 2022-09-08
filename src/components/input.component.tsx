@@ -4,7 +4,7 @@ const Input = (props:any) => {
         <div className="in_container">
                 <div className="inpt_container">
                   {props.name}
-                    <input className="C_input" placeholder={props.placeholder} />
+                    <input className="C_input" placeholder={props.placeholder}  type={props.type} />
                 </div>
             <div className="">
             </div>
