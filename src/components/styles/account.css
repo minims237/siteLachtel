@@ -23,7 +23,7 @@ font-size: 18px;
 color: #039af5;
 }
 .account_ctn{
-    background-color: lightsalmon;
+  
     width: 80%;
     height: 100vh;
     margin-left: 20%;
@@ -37,7 +37,7 @@ color: #039af5;
     align-items: center;
 }
 .account_menu_item_active{
-    border-left: 4px solid #039af5;
+    border-left: 5px solid #039af5;
     background-color: rgba(3, 154, 245, 0.1);
     margin: 2px 0px;
     height: 50px;
@@ -53,7 +53,7 @@ color: #039af5;
 .account_menu a{
     text-decoration: none;
     color: #039af5;
-    padding-left: 22px;
+    padding-left: 10px;
 }
 .account_menu h4{
     text-transform: initial;

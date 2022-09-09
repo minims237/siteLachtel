@@ -11,7 +11,7 @@ const TopBar=(props: any)=>{
                 <Icon.PersonCircle size={45}/>
                 <h4>{props.Username}</h4>
             </div>
-            <div>{props.children}</div>
+            
         </div>
     )
 }

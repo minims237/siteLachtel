@@ -1,0 +1,136 @@
+
+  .a_container{
+    background-color:  #191c4d;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 70px;
+    border-radius: 9px;
+}
+.a_container_title{
+  margin-bottom: 55px;
+}
+.a_container_title h2 {
+color: white;
+font-size: 24px;
+
+}
+.a_container_ctn h3{
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+   opacity: 60%;
+   margin-bottom: 40px;
+}
+.a_container h4{
+  color: white;
+  opacity: 60%;
+  font-weight: 300;
+  font-size: 12px;
+}
+.a_container_ctn_choix{
+  margin-left: 22px;
+}
+.a_container_ctn_choix h4{
+  text-transform: initial;
+  
+
+  
+}
+span{
+  color: red;
+ 
+}
+.a_container_ctn_choix_inline{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left:40px;
+}
+.a_container_ctn_choix_item{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin:40px 0px;
+}
+.a_container_ctn_choix_item img{
+  width: 260px;
+  border-radius: 10px;
+  border:6px solid white;
+ 
+}
+.a_container_ctn_choix_item input{
+  height: 20px;
+  width: 20px;
+}
+
+
+.a_container_ctn_inp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 22px;
+  margin-bottom: 50px;
+}
+
+.a_container_ctn_inp input{
+  height: 45px;
+  width: 320px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+.a_container_ctn_inp h4{
+  margin-left: 8px;
+}
+.a_container_ctn_inp_item_txt h4{
+  text-transform: initial;
+}
+.acheteur{
+  
+  margin-bottom: 10px;
+}
+.a_container_ctn_box{
+  margin:40px 0 0 0px;
+  
+}
+
+.a_container_ctn_submit{
+  margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.a_container_ctn_box a{
+  color:#5e72e4 ;
+}
+
+.a_container_ctn_box label{
+  color:#525f7f ;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: #fff;
+}
+.a_container_ctn_submit button{
+  height: 45px;
+  width: 200px;
+  background: #039af5;
+  cursor: pointer;
+  transition: 0.1s;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  
+}
+
+.a_container_ctn_submit button:hover{
+  background: #039af5;
+  cursor: pointer;
+}
+
+

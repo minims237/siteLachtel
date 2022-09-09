@@ -6,16 +6,15 @@ import Input from "./components/input.component";
 import ProfilAc from "./components/profilAc.component";
 
 import Page_accueil from "./pages/Page_accueil";
+import Account from "./pages/Account.pages";
 
 
 function App() {
   return (
     <div className="app">
-        <Router>
-
-
-          <Page_accueil />
-        </Router>
+      <Router>
+        <Account />
+      </Router>
     </div>
   );
 }

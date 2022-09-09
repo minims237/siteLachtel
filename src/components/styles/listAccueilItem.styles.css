@@ -1,0 +1,15 @@
+.list_container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.list_container_inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 6px 0px;
+}
