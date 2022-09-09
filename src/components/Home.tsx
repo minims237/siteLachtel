@@ -7,6 +7,8 @@ import "../components/styles/apropos.css";
 import Header from "./Header.components";
 import AproposD from "../components/AproposD";
 import Contacts from "./Contacts.Components";
+import Produit from "./nosProduits.component";
+import Faq from "./Faq.components";
 let d = 100;
 const HomePage = () => {
   const [naviga, setNaviga] = useState(1);
@@ -34,11 +36,18 @@ const HomePage = () => {
           <h3>nos produits</h3>
           
         </div>
+        <Produit/>
       </div>
       <div id="noschiffre" className="oneBlock">
         <div className="onBlock_title">
           <h3>nos chiffres</h3>
         </div>
+      </div>
+      <div id="faq" className="oneBlock">
+        <div className="onBlock_title">
+          <h3>faq</h3>
+        </div>
+        <Faq/>
       </div>
       <div id="contact" className="oneBlock contact">
         <div>

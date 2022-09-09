@@ -5,6 +5,7 @@ import Page_accueil from "./Page_accueil";
 import ProfilUser from "./Profil.pages";
 import AchatPart from "./Achat.pages";
 import Historique from "./Historique.pages";
+import ModalPopUp from "../components/Modal.components";
 const Account = () => {
     const [menu, setMenu] = useState(1)
     const [show, setShow] = useState(false)
@@ -116,6 +117,7 @@ const Account = () => {
                     menu==4?(<Historique/>):(<div></div>)
                 }
             </div>
+            
         </div>
     )
 }
