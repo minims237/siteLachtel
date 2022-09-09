@@ -20,7 +20,7 @@ const Contacts=()=>{
               </div>
               <div className="c_info">
                 <h5>
-                  Maroua
+                  <input type="text" placeholder="Votre adresse" />
                 </h5>
               </div>
             </div>
@@ -33,7 +33,7 @@ const Contacts=()=>{
               </div>
               <div className="c_info">
                 <h5>
-                  lachtel@gmail.com
+                  <input type="text" placeholder="Votre email" />
                 </h5>
               </div>
             </div>
@@ -46,12 +46,12 @@ const Contacts=()=>{
               </div>
               <div className="c_info">
                 <h5>
-                  690301290
+                  <input type="text" placeholder="Votre Téléphone" />
                 </h5>
               </div>
             </div>
           </div>
-          
+          <button className="valider">Valider</button>
         </div>
       </div>
     );

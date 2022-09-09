@@ -9,12 +9,6 @@ const Signup = () => {
             <form method="POST" id="signup-form" className="signup-form">
                 <div className="signup_form">
 
-                    <div className="signup_for_title">
-                        <div className="signup_for_title_a">
-                            <h3>Inscription</h3>
-                        </div>
-                    </div>
-
                     <div className="signup_for_box">
                         <div className="signup_for">
                             <input type="text" placeholder="Nom et Prenom" />

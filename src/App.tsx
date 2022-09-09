@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="app">
       <Router>
-        <Account />
+        <HomePage />
       </Router>
     </div>
   );
