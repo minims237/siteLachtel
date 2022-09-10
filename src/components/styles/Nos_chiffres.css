@@ -26,6 +26,15 @@
 
     .item1,.item{
         margin:15px 0px;
+        font-size: small;
+    }
+    .item1 h4,.item h4{
+        font-size: medium;
+    text-transform: initial;
+    font-weight: bold;
+    }
+    .item h4{
+        color: #039af5;
     }
     .open p {
         margin-left: 20px;

@@ -7,13 +7,14 @@ import ProfilAc from "./components/profilAc.component";
 
 import Page_accueil from "./pages/Page_accueil";
 import Account from "./pages/Account.pages";
+import Navigation from "./components/Navigation.compoenents";
 
 
 function App() {
   return (
     <div className="app">
       <Router>
-        <HomePage />
+        <Navigation />
       </Router>
     </div>
   );

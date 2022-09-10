@@ -2,7 +2,10 @@
 import { useState } from "react";
 import "./styles/signup.css";
 import * as Icon from "react-bootstrap-icons";
+import { useHistory } from "react-router-dom";
 const Signup = () => {
+    let history=useHistory()
+    const navigue=()=>history.push("account")
     return (
         <div className="s_container">
 
@@ -32,7 +35,7 @@ const Signup = () => {
                             <input type="text" placeholder="Ville" />
                         </div>
                         <div className="submit-class">
-                            <input type="submit" name="submit" id="submit" className="form-submit submit" value="soumettre" />
+                            <input type="submit" name="submit" id="submit" className="form-submit submit" value="soumettre" onClick={()=>navigue()} />
                         </div>
 
                     </div>

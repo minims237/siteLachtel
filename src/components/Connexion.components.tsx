@@ -1,6 +1,10 @@
 
+import { useHistory } from "react-router-dom";
 import "./styles/connexion.css";
 const Connexion = () => {
+    
+    let history=useHistory()
+    const navigue=()=>history.push("account")
     return (
 
 
@@ -21,7 +25,7 @@ const Connexion = () => {
                         </div>
 
                         <div className="submit-class">
-                            <input type="submit" name="submit" id="submit" className="form-submit submit" value="Se connecter" />
+                            <input type="submit" name="submit" id="submit" className="form-submit submit" value="Se connecter" onClick={()=>navigue()}/>
                         </div>
                    
                     </div>

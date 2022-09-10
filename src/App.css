@@ -60,7 +60,9 @@ h4 {
   flex-direction: column;
 
 }
-
+.oneBlock h3{
+  text-align: center;
+}
 .contact_b {
   padding: 0px 35px;
   background-color: #fff;
@@ -296,8 +298,12 @@ h4 {
 .closeBtn {
   display: none;
 }
+.h_header_oneBlog_hiden{
+  display: none;
+}
 
 @media (max-width:600px) {
+ 
   .contac {
     display: flex;
     flex-direction: column;

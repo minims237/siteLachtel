@@ -6,7 +6,7 @@ import Table from 'react-bootstrap/Table';
 
 
 export default function Faq() {
-  const [show, setShow] = useState(1);
+  const [show, setShow] = useState(0);
 
   
   function BasicExample() {
@@ -44,9 +44,10 @@ export default function Faq() {
       <div>
         {show==1 ? (
           <div className="item">
-            <Icon.ChevronUp size={15} color="#039af5" />
+            <Icon.ChevronUp size={12} color="#039af5" />
             <button onClick={() => setShow(0)}>
-              Comment participer ?
+            <h4>Comment participer ?</h4>
+              
             </button>
             <div className="open">
               <p>
@@ -63,19 +64,19 @@ export default function Faq() {
           </div>
         ) : (
           <div className="item1">
-            <Icon.ChevronDown size={15}  />
+            <Icon.ChevronDown size={12}  />
             <button color="#039af5" onClick={() => setShow(1)}>
-              Comment participer ?
+              <h4>Comment participer ?</h4>
             </button>
             
           </div>
         )}
         {show==2 ? (
           <div className="item">
-            <Icon.ChevronUp size={15} color="#039af5" />
+            <Icon.ChevronUp size={12} color="#039af5" />
             <button onClick={() => setShow(0)}>
-              {" "}
-              Comment acheter des parts ?{" "}
+              {" "} <h4> Comment acheter des parts ?{" "}</h4>
+             
             </button>
             <div className="open">
               <p style={{ fontWeight: "bold" }}>
@@ -108,7 +109,7 @@ export default function Faq() {
                   L’utilisateur utilisera donc parmi les moyens susmentionnés,
                   celui qui lui convient selon le pays dans lequel il se trouve.
                 </p>
-                <p style={{ fontSize: 15, color: "red", fontWeight: "bold" }}>
+                <p style={{ fontSize: 12, color: "red", fontWeight: "bold" }}>
                   NB: Pour l’utilisation des moyens de paiement de la troisième
                   possibilités, après avoir effectué un achat de parts, bien
                   vouloir nous envoyer une photocopie, une photo, ou une capture
@@ -120,10 +121,10 @@ export default function Faq() {
           </div>
         ) : (
           <div className="item1">
-            <Icon.ChevronDown size={15}  />
+            <Icon.ChevronDown size={12}  />
             <button onClick={() => setShow(2)}>
-              {" "}
-              Comment acheter des parts ?
+              {" "} <h4>Comment acheter des parts ?</h4>
+              
             </button>
             
             
@@ -133,10 +134,10 @@ export default function Faq() {
 
         {show==3 ? (
           <div className="item">
-            <Icon.ChevronUp size={15} color="#039af5" />
+            <Icon.ChevronUp size={12} color="#039af5" />
             <button onClick={() => setShow(0)}>
-              {" "}
-              Qu'est ce qui garanti mon investissement dans LACTHEL ?{" "}
+              {" "} <h4>Qu'est ce qui garanti mon investissement dans LACTHEL ?{" "}</h4>
+              
             </button>
             <div className="open">
               {" "}
@@ -149,10 +150,10 @@ export default function Faq() {
           </div>
         ) : (
           <div className="item1">
-            <Icon.ChevronDown size={15}  />
+            <Icon.ChevronDown size={12}  />
             <button onClick={() => setShow(3)}>
-              {" "}
-              Qu'est ce qui garanti mon investissement dans LACTHEL ?
+              {" "} <h4>Qu'est ce qui garanti mon investissement dans LACTHEL ?</h4>
+              
             </button>
             
            
@@ -163,10 +164,10 @@ export default function Faq() {
 
         {show==5 ? (
           <div className="item">
-            <Icon.ChevronUp size={15} color="#039af5" />
+            <Icon.ChevronUp size={12} color="#039af5" />
             <button onClick={() => setShow(0)}>
-              {" "}
-              Est il obligé d' acheter des parts au moment de l' inscription ?{" "}
+              {" "} <h4> Est il obligé d' acheter des parts au moment de l' inscription ?{" "}</h4>
+             
             </button>
             <div className="open">
               {" "}
@@ -180,9 +181,10 @@ export default function Faq() {
           </div>
         ) : (
           <div className="item1">
-            <Icon.ChevronDown size={15}  />
+            <Icon.ChevronDown size={12}  />
             <button onClick={() => setShow(5)}>
-              Est il obligé d' acheter des parts au moment de l' inscription ?
+            <h4>Est il obligé d' acheter des parts au moment de l' inscription ?</h4>
+              
             </button>
            
           </div>
@@ -192,10 +194,11 @@ export default function Faq() {
 
         {show==6 ? (
           <div className="item">
-            <Icon.ChevronUp size={15} color="#039af5" />
+            <Icon.ChevronUp size={12} color="#039af5" />
             <button onClick={() => setShow(0)}>
               {" "}
-              Comment fonctionne le pack investissement ?{" "}
+              <h4> Comment fonctionne le pack investissement ?{" "}</h4>
+             
             </button>
             <div className="open">
               <p>
@@ -205,10 +208,10 @@ export default function Faq() {
           </div>
         ) : (
           <div className="item1">
-            <Icon.ChevronDown size={15}  />
+            <Icon.ChevronDown size={12}  />
             <button onClick={() => setShow(6)}>
-              {" "}
-              Comment fonctionne le pack investissement ?
+              {" "} <h4>Comment fonctionne le pack investissement ?</h4>
+              
             </button>
             
           </div>

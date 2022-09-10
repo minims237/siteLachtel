@@ -118,6 +118,11 @@ const HomePage = () => {
                 </a>
               </li>
               <li>
+                <a href="#faq" onClick={() => setNaviga(6)}>
+                  <Icon.ChevronRight size="10" /> faq
+                </a>
+              </li>
+              <li>
                 <a href="#contact" onClick={() => setNaviga(5)}>
                   <Icon.ChevronRight size="10" /> contacts
                 </a>

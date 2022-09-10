@@ -1,10 +1,11 @@
 import * as Icon from "react-bootstrap-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logoE from "./../assets/img/logoE.png";
 import ModalPopUp from "./Modal.components";
 import Signup from "./Signup.components";
 import Connexion from "./Connexion.components";
 import { Modal } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 const Header = () => {
   const [naviga, setNaviga] = useState(1);
@@ -14,6 +15,41 @@ const Header = () => {
   const [connexion, setConnexion] = useState(false)
   const handleClose = () => setVisible(false)
   const handleCloses = () => setConnexion(false)
+
+  const [windowDimenion, detectHW] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  })
+
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    })
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', detectSize)
+
+    return () => {
+      window.removeEventListener('resize', detectSize)
+    }
+  }, [windowDimenion])
+  //changement de la classe sur un bloc en fonction de la largeur de l'ecran
+  const menuResponsive = () => {
+    if (windowDimenion.winWidth < 600) {
+      return "h_header_oneBlog_hiden"
+    } else {
+      return "h_header_oneBlog"
+    }
+  }
+
+  //desactivation du menu responsif
+  const hideMenu = (num: any) => {
+    setNaviga(num)
+    setMenu(false)
+  }
+
   return (
     <div className="h_header">
       <div>
@@ -24,7 +60,8 @@ const Header = () => {
         <div className="h_header_oneBlogA">
           <div className="menuSection">
             <div className="closeBtn">
-              <Icon.X size="46" />
+              <button className="btn" onClick={() => setMenu(false)}><Icon.X size="46" /></button>
+
             </div>
             <div className="sectionTwo">
               <div className="h_navi">
@@ -33,14 +70,14 @@ const Header = () => {
                     <a
                       href="#accueil"
                       className="active"
-                      onClick={() => setNaviga(1)}
+                      onClick={() => hideMenu(1)}
                     >
                       Accueil
                     </a>
                   </li>
                 ) : (
                   <li>
-                    <a href="#accueil" onClick={() => setNaviga(1)}>
+                    <a href="#accueil" onClick={() => hideMenu(1)}>
                       Accueil
                     </a>
                   </li>
@@ -51,14 +88,14 @@ const Header = () => {
                     <a
                       href="#apropos"
                       className="active"
-                      onClick={() => setNaviga(2)}
+                      onClick={() => hideMenu(2)}
                     >
                       A Propos
                     </a>
                   </li>
                 ) : (
                   <li>
-                    <a href="#apropos" onClick={() => setNaviga(2)}>
+                    <a href="#apropos" onClick={() => hideMenu(2)}>
                       A Propos
                     </a>
                   </li>
@@ -69,14 +106,14 @@ const Header = () => {
                     <a
                       href="#nosproduit"
                       className="active"
-                      onClick={() => setNaviga(3)}
+                      onClick={() => hideMenu(3)}
                     >
                       Nos Produits
                     </a>
                   </li>
                 ) : (
                   <li>
-                    <a href="#nosproduit" onClick={() => setNaviga(3)}>
+                    <a href="#nosproduit" onClick={() => hideMenu(3)}>
                       Nos Produits
                     </a>
                   </li>
@@ -87,14 +124,14 @@ const Header = () => {
                     <a
                       href="#noschiffre"
                       className="active"
-                      onClick={() => setNaviga(4)}
+                      onClick={() => hideMenu(4)}
                     >
                       Nos Chiffre
                     </a>
                   </li>
                 ) : (
                   <li>
-                    <a href="#noschiffre" onClick={() => setNaviga(4)}>
+                    <a href="#noschiffre" onClick={() => hideMenu(4)}>
                       Nos Chiffre
                     </a>
                   </li>
@@ -105,14 +142,14 @@ const Header = () => {
                     <a
                       href="#faq"
                       className="active"
-                      onClick={() => setNaviga(6)}
+                      onClick={() => hideMenu(6)}
                     >
                       Faq
                     </a>
                   </li>
                 ) : (
                   <li>
-                    <a href="#faq" onClick={() => setNaviga(6)}>
+                    <a href="#faq" onClick={() => hideMenu(6)}>
                       Faq
                     </a>
                   </li>
@@ -123,14 +160,14 @@ const Header = () => {
                     <a
                       href="#contact"
                       className="active"
-                      onClick={() => setNaviga(5)}
+                      onClick={() => hideMenu(5)}
                     >
                       Contact
                     </a>
                   </li>
                 ) : (
                   <li>
-                    <a href="#contact" onClick={() => setNaviga(5)}>
+                    <a href="#contact" onClick={() => hideMenu(5)}>
                       Contact
                     </a>
                   </li>
@@ -149,7 +186,7 @@ const Header = () => {
           </div>
         </div>
       ) : (
-        <div className="h_header_oneBlog">
+        <div className={menuResponsive()}>
           <div className="h_navi">
             {naviga == 1 ? (
               <li>
@@ -222,7 +259,23 @@ const Header = () => {
                 </a>
               </li>
             )}
-
+            {naviga == 6 ? (
+              <li>
+                <a
+                  href="#faq"
+                  className="active"
+                  onClick={() => hideMenu(6)}
+                >
+                  Faq
+                </a>
+              </li>
+            ) : (
+              <li>
+                <a href="#faq" onClick={() => hideMenu(6)}>
+                  Faq
+                </a>
+              </li>
+            )}
             {naviga == 5 ? (
               <li>
                 <a

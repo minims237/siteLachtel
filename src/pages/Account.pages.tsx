@@ -7,7 +7,7 @@ import AchatPart from "./Achat.pages";
 import Historique from "./Historique.pages";
 import ModalPopUp from "../components/Modal.components";
 const Account = () => {
-    const [menu, setMenu] = useState(1)
+    const [menu, setMenu] = useState(11)
     const [show, setShow] = useState(false)
 
     return (
@@ -18,12 +18,12 @@ const Account = () => {
                     <h1>LACHTEL</h1>
                 </div>
                 {
-                    menu == 1 ? (<div className="account_menu_item_active">
-                        <a className="account_menu_item_on" href="#" onClick={() => setMenu(1)}>
+                    menu == 11 ? (<div className="account_menu_item_active">
+                        <a className="account_menu_item_on" href="/account" onClick={() => setMenu(11)}>
                             <h4><Icon.Speedometer2 size={25} color="#039af5" />&nbsp;&nbsp;Acceuil</h4>
                         </a>
                     </div>) : (<div className="account_menu_item">
-                        <a className="account_menu_item_on" href="#" onClick={() => setMenu(1)}>
+                        <a className="account_menu_item_on" href="/account" onClick={() => setMenu(11)}>
                             <h4><Icon.Speedometer2 size={25} color="#039af5" />&nbsp;&nbsp;Acceuil</h4>
                         </a>
                     </div>)
@@ -32,14 +32,14 @@ const Account = () => {
                 {
                     menu == 2 ? (
                         <div className="account_menu_item_active">
-                            <a className="account_menu_item_on" href="#" onClick={() => setMenu(2)}>
+                            <a className="account_menu_item_on" href="/account/profil" onClick={() => setMenu(12)}>
                                 <h4><Icon.PersonFill size={25} color="#039af5" />&nbsp;&nbsp;Profil utilisateur</h4>
                             </a>
                         </div>
                     ) :
                         (
                             <div className="account_menu_item">
-                                <a className="account_menu_item_on" href="#" onClick={() => setMenu(2)}>
+                                <a className="account_menu_item_on" href="/account/profil" onClick={() => setMenu(12)}>
                                     <h4><Icon.PersonFill size={25} color="#039af5" />&nbsp;&nbsp;Profil utilisateur</h4>
                                 </a>
                             </div>
@@ -48,14 +48,14 @@ const Account = () => {
                 {
                     menu == 3 ? (
                         <div className="account_menu_item_active">
-                            <a className="account_menu_item_on" href="#" onClick={() => setMenu(3)}>
+                            <a className="account_menu_item_on" href="/account/achat" onClick={() => setMenu(3)}>
                                 <h4><Icon.PieChartFill size={25} color="#039af5" />&nbsp;&nbsp;Achater des parts</h4>
                             </a>
                         </div>
                     ) :
                         (
                             <div className="account_menu_item">
-                                <a className="account_menu_item_on" href="#" onClick={() => setMenu(3)}>
+                                <a className="account_menu_item_on" href="/account/achat" onClick={() => setMenu(3)}>
                                     <h4><Icon.PieChartFill size={25} color="#039af5" />&nbsp;&nbsp;Achater des parts</h4>
                                 </a>
                             </div>
@@ -65,13 +65,13 @@ const Account = () => {
                 {
                     menu == 4 ? (
                         <div className="account_menu_item_active">
-                            <a className="account_menu_item_on" href="#" onClick={() => setMenu(4)}>
+                            <a className="account_menu_item_on" href="/account/historique" onClick={() => setMenu(4)}>
                                 <h4><Icon.ListUl size={25} color="#039af5" />&nbsp;&nbsp;Historique</h4>
                             </a>
                         </div>
                     ) : (
                         <div className="account_menu_item">
-                            <a className="account_menu_item_on" href="#" onClick={() => setMenu(4)}>
+                            <a className="account_menu_item_on" href="/account/historique" onClick={() => setMenu(4)}>
                                 <h4><Icon.ListUl size={25} color="#039af5" />&nbsp;&nbsp;Historique</h4>
                             </a>
                         </div>
@@ -105,10 +105,10 @@ const Account = () => {
             </div>
             <div className="account_ctn">
                 {
-                    menu==1?(<Page_accueil/>):(<div></div>)
+                    menu==11?(<Page_accueil/>):(<div></div>)
                 }
                 {
-                    menu==2?(<ProfilUser/>):(<div></div>)
+                    12?(<ProfilUser/>):(<div></div>)
                 }
                 {
                     menu==3?(<AchatPart/>):(<div></div>)
